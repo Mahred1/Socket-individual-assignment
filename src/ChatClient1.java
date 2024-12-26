@@ -4,15 +4,12 @@ import java.net.*;
 public class ChatClient1 {
 
     public static void main(String[] args) throws IOException {
-        // Connect to the server on port 5000
         Socket socket = new Socket("localhost", 5000);
         System.out.println("Connected to server");
 
-        // Create input and output streams
         BufferedReader in = new BufferedReader(new InputStreamReader(socket.getInputStream()));
         PrintWriter out = new PrintWriter(socket.getOutputStream(), true);
 
-        // Start two threads for reading and writing
         Thread readerThread = new Thread(() -> {
             try {
                 String message;
