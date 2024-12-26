@@ -7,7 +7,7 @@ ID:UGR/30846/15
 
 Follow this steps to run the code
 
-1. run chat server.java and wait for the confirmation with the porn number.
+1. run chat server.java and wait for the confirmation with the port number.
 
 2. run the client 1.java and wait for the connected message.
 
@@ -15,6 +15,6 @@ Follow this steps to run the code
 
 4.once all files are run in order , we have real time connection b/n each client
 
-Now when we write a message from client 1 it is received in the client 2 side and vise versa.
+Now when we can write a message from client 1 & it is received in the client 2 side and vise versa.
 
 NB: chatserver.java MUST be running before any of the client form a connection.(order of running the file is important to avoid exceptions)
